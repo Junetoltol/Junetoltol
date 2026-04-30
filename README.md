@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Junetoltol
-- 👀 I’m interested in python java games
-- 🌱 I’m currently learning python java
+- 👀 I’m interested in IoT System
+- 🌱 I’m currently learning AI, ML,Communication,IoT System
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me junetoltol@gmail.com
 
