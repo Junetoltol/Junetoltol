@@ -11,11 +11,15 @@ I am interested in a practical systems question: **how can AI models run efficie
 - **AI systems profiling** — separating end-to-end behavior from individual kernel behavior
 - **IoT systems** — sensing and control with Raspberry Pi and embedded peripherals
 
-## Current project
+## Current projects
 
 ### LG Aimers Hackathon — In progress
 
 I am currently working on an LG Aimers hackathon project. The repository will be published once the implementation and results are ready to share.
+
+### Secure Dynamic Edge AI — Planned for Fall 2026
+
+This team project will explore multi-sensor verification and quantization robustness on Raspberry Pi. The repository will remain private during development.
 
 ## Completed experiments
 
