@@ -63,6 +63,7 @@ Built and evaluated an offline Korean meeting-transcription pipeline combining s
 - Supporting hands-on learning as an **IoT Systems teaching assistant**
 - Currently studying **Physical AI / Cyber-Physical AI**, efficient LLM inference, and experimental methodology for AI systems
 - Turning course experiments into reproducible repositories with clear setup, measurements, and limitations
+- I am also curious about teaching someone.
 
 ## How I approach experiments
 
