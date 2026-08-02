@@ -1,10 +1,55 @@
-- 👋 Hi, I’m @Junetoltol
-- 👀 I’m interested in IoT System
-- 🌱 I’m currently learning AI, ML,Communication,IoT System
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me junetoltol@gmail.com
+# Hi, I'm Junetoltol 👋
 
-<!---
-Junetoltol/Junetoltol is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Information & Communication Engineering student focused on **Edge AI, on-device inference, and Physical AI systems**.
+
+I am interested in a practical systems question: **how can AI models run efficiently and reliably under real device constraints?** I explore that question through embedded devices, controlled measurement, and kernel-level profiling.
+
+## Research interests
+
+- **Edge / On-device AI** — model quantization, GPU offload, memory use, latency, and throughput
+- **Physical AI** — the interaction between perception, compute resources, and real-world action
+- **AI systems profiling** — separating end-to-end behavior from individual kernel behavior
+- **IoT systems** — sensing and control with Raspberry Pi and embedded peripherals
+
+## Current experiment
+
+### LLM inference on Jetson Orin Nano
+
+I am profiling Qwen3.5-2B inference with `llama.cpp`, NVIDIA Nsight Systems, and Nsight Compute.
+
+| Comparison | Observed result |
+|---|---|
+| Whole-prefill throughput, B=384 → B=512 | `916.24 ± 32.67` → `992.18 ± 38.02 token/s` (**+8.3%**) |
+| Selected BF16 Tensor Core GEMM kernel | `9.636 ± 0.538` → `8.564 ± 0.230 TFLOP/s` (**−11.1%**) |
+
+**Takeaway:** a slower sampled kernel does not necessarily mean lower whole-model throughput. I report kernel-level and end-to-end measurements separately and control workload, warm-up, clocks, and repetitions.
+
+📌 [Experiment repository — documentation in progress](https://github.com/Junetoltol/edge-ai-jetson-mini-project)
+
+## Selected projects
+
+| Project | What it shows | Stack |
+|---|---|---|
+| [Edge AI on Jetson](https://github.com/Junetoltol/edge-ai-jetson-mini-project) | Jetson Orin Nano inference experiments and profiling notes; currently being organized | Jetson, `llama.cpp`, Nsight Systems / Compute |
+| [IoT Systems coursework](https://github.com/Junetoltol/Assignments/tree/main/IotSystem-main) | Raspberry Pi sensing and control with PIR, DHT11, ultrasonic, gas, light, soil-moisture, motors, and simple vision exercises | C, Python, Raspberry Pi, OpenCV |
+| [Job Buddy](https://github.com/Junetoltol/WebProject2025ICE) | Team repository for an AI-assisted resume and cover-letter web service | FastAPI, OpenAI / Gemini APIs, Spring Boot, React, MySQL |
+| [Gamified Calendar](https://github.com/Junetoltol/Calendargame) | Android calendar and home-screen widget prototype | Kotlin, Jetpack Compose, Glance |
+
+## Tools I work with
+
+- **Languages:** Python, C/C++, Java, Kotlin
+- **Edge & AI systems:** Jetson Orin Nano, Raspberry Pi, `llama.cpp`, CUDA, model quantization
+- **Profiling:** NVIDIA Nsight Systems, Nsight Compute, controlled benchmarking
+- **Application development:** FastAPI, Spring Boot, React, MySQL, Android / Jetpack Compose
+
+## Teaching and learning
+
+- Supporting hands-on learning as an **IoT Systems teaching assistant**
+- Currently studying **Physical AI / Cyber-Physical AI**, efficient LLM inference, and experimental methodology for AI systems
+- Turning course experiments into reproducible repositories with clear setup, measurements, and limitations
+
+## How I approach experiments
+
+`Question → controlled setup → end-to-end measurement → kernel inspection → interpretation → limitations`
+
+I prefer evidence-backed conclusions and explicitly separate what was measured from what is inferred.
