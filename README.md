@@ -11,11 +11,17 @@ I am interested in a practical systems question: **how can AI models run efficie
 - **AI systems profiling** — separating end-to-end behavior from individual kernel behavior
 - **IoT systems** — sensing and control with Raspberry Pi and embedded peripherals
 
-## Current experiment
+## Current project
 
-### LLM inference on Jetson Orin Nano
+### LG Aimers Hackathon — In progress
 
-I am profiling Qwen3.5-2B inference with `llama.cpp`, NVIDIA Nsight Systems, and Nsight Compute.
+I am currently working on an LG Aimers hackathon project. The repository will be published once the implementation and results are ready to share.
+
+## Completed experiments
+
+### LLM inference on Jetson Orin Nano — Completed
+
+I profiled Qwen3.5-2B inference with `llama.cpp`, NVIDIA Nsight Systems, and Nsight Compute.
 
 | Comparison | Observed result |
 |---|---|
@@ -24,16 +30,22 @@ I am profiling Qwen3.5-2B inference with `llama.cpp`, NVIDIA Nsight Systems, and
 
 **Takeaway:** a slower sampled kernel does not necessarily mean lower whole-model throughput. I report kernel-level and end-to-end measurements separately and control workload, warm-up, clocks, and repetitions.
 
-📌 [Experiment repository — documentation in progress](https://github.com/Junetoltol/edge-ai-jetson-mini-project)
+📌 [Edge AI profiling repository](https://github.com/Junetoltol/edge-ai-jetson-mini-project)
+
+### Offline meeting transcription on Jetson Orin Nano — Completed
+
+Built and evaluated an offline Korean meeting-transcription pipeline combining speech recognition, local LLM correction, and speech synthesis on a resource-constrained edge device.
+
+📌 [Meeting transcription repository](https://github.com/Junetoltol/jetson-meeting-transcription-poc)
 
 ## Selected projects
 
 | Project | What it shows | Stack |
 |---|---|---|
-| [Edge AI on Jetson](https://github.com/Junetoltol/edge-ai-jetson-mini-project) | Jetson Orin Nano inference experiments and profiling notes; currently being organized | Jetson, `llama.cpp`, Nsight Systems / Compute |
+| [Edge AI on Jetson](https://github.com/Junetoltol/edge-ai-jetson-mini-project) | Completed Jetson Orin Nano inference experiments with end-to-end and kernel-level profiling | Jetson, `llama.cpp`, Nsight Systems / Compute |
+| [Offline Meeting Transcription](https://github.com/Junetoltol/jetson-meeting-transcription-poc) | Completed edge pipeline for Korean speech recognition, local LLM correction, and speech synthesis | Jetson, Whisper, local LLM, TTS |
 | [IoT Systems coursework](https://github.com/Junetoltol/Assignments/tree/main/IotSystem-main) | Raspberry Pi sensing and control with PIR, DHT11, ultrasonic, gas, light, soil-moisture, motors, and simple vision exercises | C, Python, Raspberry Pi, OpenCV |
 | [Job Buddy](https://github.com/Junetoltol/WebProject2025ICE) | Team repository for an AI-assisted resume and cover-letter web service | FastAPI, OpenAI / Gemini APIs, Spring Boot, React, MySQL |
-| [Gamified Calendar](https://github.com/Junetoltol/Calendargame) | Android calendar and home-screen widget prototype | Kotlin, Jetpack Compose, Glance |
 
 ## Tools I work with
 
