@@ -19,7 +19,7 @@ I am currently working on an LG Aimers hackathon project. The repository will be
 
 ### Secure Dynamic Edge AI — Planned for Fall 2026
 
-This team project will explore multi-sensor verification and quantization robustness on Raspberry Pi. The repository will remain private during development.
+This team project will explore multi-sensor verification and quantization robustness on Raspberry Pi or Jetson. The repository will remain private during development. Now we are searching references and studying.
 
 ## Completed experiments
 
